@@ -1,0 +1,26 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: blues-man-demo-poi-map-app-dev
+  annotations:
+    argocd/app-name: blues-man-demo-poi-map-app-dev
+    backstage.io/kubernetes-id: blues-man-demo-poi-map-app-dev
+    backstage.io/kubernetes-namespace: blues-man-demo
+    backstage.io/kubernetes-label-selector: 'app.kubernetes.io/instance=blues-man-demo-poi-map-app-dev'
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: Summit23DevLab/blues-man-poi-map-app
+  tags:
+    - typescript
+    - angular
+    - workshop
+  links:
+    - url: https://devspaces.apps.summit23.0x74.p1.openshiftapps.com/#https://github.com/Summit23DevLab/blues-man-poi-map-app?che-editor=che-incubator/che-code/insiders&devfilePath=.devfile-vscode.yaml
+      title: CodeReady Workspaces (VS Code)
+      icon: web
+    - url: https://devspaces.apps.summit23.0x74.p1.openshiftapps.com/#https://github.com/Summit23DevLab/blues-man-poi-map-app?che-editor=che-incubator/che-idea/next&devfilePath=.devfile-intellij.yaml
+      title: CodeReady Workspaces (JetBrains IntelliJ)
+      icon: web
+spec:
+  type: service
+  lifecycle: production
+  owner: "rhdeveloper-workshop-authors"
